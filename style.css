@@ -61,6 +61,10 @@ body {
         font-size: 25px;
     }
 
+    #escolha{
+        background-color: :#2E8B57;
+    }
+
     button{
     background-color:#98FB98;
     border: 2px solid transparent;
