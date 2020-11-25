@@ -41,7 +41,7 @@ body {
         margin: auto;
     }
 
-    #inputs{
+    .inputs{
        display: flex;
        justify-content: center;
        align-items: center;
@@ -55,14 +55,37 @@ body {
         width: 300px;
     }
 
-    #inputs p{
+    .inputs p{
         padding: 0 10px;
         color: aliceblue;
         font-size: 25px;
     }
 
-    #escolha{
-        background-color: :#2E8B57;
+    #escolha p{
+        color:aliceblue;
+        font-size: 22px;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+    #previa{
+        background-color: aliceblue;
+        border: 1px solid transparent ;
+        border-radius: 5px;
+        width: 300px;
+        margin-top: 5px;
+        padding: 5px 10px;
+
+    }
+
+    #resposta{
+        background-color: aliceblue;
+        border: 1px solid transparent ;
+        border-radius: 5px;
+        width: 300px;
+        padding: 5px 10px;
     }
 
     button{
