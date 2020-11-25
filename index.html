@@ -1,53 +1,60 @@
 <!DOCTYPE html>
 <html>
   <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
     <title>Ask the Bee</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
-  
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
       <h1>Ask the Bee</h1>
     </header>
-    <img src="https://cdn.pixabay.com/photo/2015/04/03/16/36/bee-705412_1280.png">
 
+    <section class="container">
+      <img
+        src="https://cdn.pixabay.com/photo/2015/04/03/16/36/bee-705412_1280.png"
+      />
+
+      <form>
+        <h2>Ask your question and I will choose for you!</h2>
+
+        <div class="inputs">
+          <input type="text" id="value1" />
+          <p>or</p>
+          <input type="text" id="value2" />
+        </div>
+
+        <div class="loader" hidden></div>
+
+        <section id="escolha">
+          <p>You asked</p>
+          <div id="previa"></div>
+
+          <p>Your destiny is:</p>
+          <div id="resposta"></div>
+        </section>
+        <button id="submit" type="submit">Choose your destiny</button>
+        <button id="reset" type="reset">Try again</button>
+      </form>
+      
+      <footer id="rodape">
+        <a id="referencia" href="https://br.freepik.com/vetores/flor"
+          >Flor vetor criado por brgfx - br.freepik.com</a
+        >
+      </footer>
+    </section>
     
-        <form>
-          <h2>Ask your question and I will choose for you!</h2> 
-          <div class="inputs">
-            
-            <input type="text">
-            <p> or </p>
-            <input type="text">
-
-          </div>
-            
-          <section id="escolha">
-            <p>You asked</p>
-
-          <div id="previa">
-            
-            </div>
-            <p>Your destiny is:</p>
-            <div id="resposta">
-              
-            </div>
-          </section>
-            
-            <button type="submit">Choose your destiny</button>
-               
-        </form>
-       
-
-   <footer id="rodape">
-        <a id="referencia" href="https://br.freepik.com/vetores/flor">Flor vetor criado por brgfx - br.freepik.com</a>
-   </footer>
-    
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+      crossorigin="anonymous"
+    ></script>
     <script src="script.js"></script>
   </body>
 </html>

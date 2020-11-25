@@ -1,111 +1,160 @@
 body {
     background-image: url(background.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: contain;
     background-position: center;
-    font-family: 'Montserrat', sans-serif;
-    }
-   header{
-        float: right;
-        padding-right: 20px;
-   }
+    font-family: "Montserrat", sans-serif;
+    justify-content: center;
+    align-items: center;
+}
 
-   img{
-     max-width: 50%;
-     position: relative;
-   }
-   
-   #referencia{
+.container {
+    width: 1024px;
+    height: 800px;
+    margin: auto;
+    margin-top: 5%;
+    position: relative;
+}
+
+header {
+    float: right;
+    padding-right: 40%;
+}
+
+img {
+    max-width: 50%;
+    position: relative;
+}
+
+#referencia {
     color: White;
     font-size: 10px;
-    }
+}
 
-    h2{
-        color: aliceblue;
-        padding: 0;
-        padding-top: 10px;
-        margin: 0;
-    }
+h2 {
+    color: aliceblue;
+    padding: 0;
+    padding-top: 10px;
+    margin: 0;
+}
 
-   form{
-    
-        background-color:#2E8B57;
-        max-width: 50%;
-        border: 1px solid transparent;
-        border-radius: 10px;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-        flex-direction: column;
-        padding-bottom: 20px;
-        margin: auto;
-    }
+form {
+    background-color: #2e8b57;
+    max-width: 50%;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    padding-bottom: 20px;
+    margin: auto;
+    text-align: center;
+}
 
-    .inputs{
-       display: flex;
-       justify-content: center;
-       align-items: center;
+.inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    }
-   
-    input{
-        border: 1px solid transparent;
-        padding: 5px;
-        border-radius: 3px;
-        width: 300px;
-    }
+input {
+    border: 1px solid transparent;
+    padding: 5px;
+    border-radius: 3px;
+}
 
-    .inputs p{
-        padding: 0 10px;
-        color: aliceblue;
-        font-size: 25px;
-    }
+.inputs p {
+    padding: 0 10px;
+    color: aliceblue;
+    font-size: 25px;
+}
 
-    #escolha p{
-        color:aliceblue;
-        font-size: 22px;
-        margin: 0;
-        justify-content: center;
-        align-items: center;
-    
-    }
+#escolha {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+}
 
-    #previa{
-        background-color: aliceblue;
-        border: 1px solid transparent ;
-        border-radius: 5px;
-        width: 300px;
-        margin-top: 5px;
-        padding: 5px 10px;
+#escolha p {
+    color: aliceblue;
+    font-size: 22px;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
 
-    }
+#previa {
+    color: black;
+    background-color: aliceblue;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    width: 300px;
+    margin-top: 5px;
+    padding: 5px 10px;
+    margin-bottom: 16px;
+    text-align: center;
+}
 
-    #resposta{
-        background-color: aliceblue;
-        border: 1px solid transparent ;
-        border-radius: 5px;
-        width: 300px;
-        padding: 5px 10px;
-    }
+#previa p {
+    color: black;
+}
 
-    button{
-    background-color:#98FB98;
+#resposta {
+    background-color: aliceblue;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    width: 300px;
+    padding: 5px 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+button {
+    background-color: #98fb98;
     border: 2px solid transparent;
     border-radius: 5px;
-    border-color: #2E8B57;
-    color:black;
+    border-color: #2e8b57;
+    color: black;
     width: 50%;
     padding: 6px;
     text-align: center;
     font-weight: bold;
-    
+}
+
+#rodape {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 5px;
+    background-color: #2e8b57;
+}
+
+#reset {
+    display: none;
+    background-color: #ee5500;
+    color: white;
+}
+
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+    margin: 10px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
     }
-    
-
-   #rodape{
-      position: absolute;
-      bottom: 0%;
-      padding: 5px;
-      background-color:#2E8B57;
-
-   }
+    100% {
+        transform: rotate(360deg);
+    }
+}
